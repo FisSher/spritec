@@ -8,7 +8,7 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(
         features = "src/test/resources/features",
         glue = "Steps",
-        tags = "@API",
+        tags = "@PETSTORE",
         plugin = {"pretty" ,"html:reports/MyLovelyReport.html"}
 
 
