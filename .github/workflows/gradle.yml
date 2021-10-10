@@ -22,7 +22,7 @@ jobs:
         java-version: '11'
         distribution: 'adopt'
         cache: gradle
-    - name: Grant execute permission for gradle
-      run: chmod +x gradle
+    - name: Grant execute permission for gradlew
+      run: chmod +x gradlew
     - name: Test the solution with Gradle
-      run: ./gradle test
+      run: ./gradlew test
