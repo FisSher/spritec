@@ -1,6 +1,9 @@
 plugins{
     id 'java'
+    id "se.thinkcode.cucumber-runner" version "0.0.8"
+
 }
+
 
 group 'fishy'
 version '1.0.SNAPSHOT'
@@ -10,6 +13,7 @@ sourceCompatibility = 1.11
 repositories{
     mavenCentral()
 }
+
 
 dependencies {
     // https://mvnrepository.com/artifact/io.rest-assured/rest-assured
@@ -34,9 +38,13 @@ dependencies {
     // https://mvnrepository.com/artifact/io.rest-assured/json-schema-validator
     testImplementation 'io.rest-assured:json-schema-validator:3.0.0'
 
+}
 
 
-
-
-
+cucumber {
+    glue = "classpath:Steps"
+    tags = "@PETSTORE"
+    plugin = ['pretty']
+    featurePath = "src/test/resources/features"
+    main = 'io.cucumber.core.cli.Main'
 }

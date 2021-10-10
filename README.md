@@ -1,5 +1,5 @@
 # Guide:
-1. Using command line? Use gradlew test, it will run the tests without much output.
+1. Using command line? Use gradlew cucumber, it will run the tests.
 
 
 2. From intellij you can execute the Runner class
