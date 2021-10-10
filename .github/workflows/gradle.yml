@@ -26,20 +26,3 @@ jobs:
       run: chmod +x gradlew
     - name: Test the solution with Gradle
       run: ./gradlew cucumber
-    - name: Cucumber Report to Annotations
-      # You may pin to the exact commit or the version.
-      # uses: deblockt/cucumber-report-annotations-action@152244262905d9ce2b17889606535ede6c9ab79b
-      uses: deblockt/cucumber-report-annotations-action@v1.7
-      with:
-        # github token
-        access-token: ${{ secrets.GITHUB_TOKEN }}
-        path: reports/cucumber-report.json
-    - name: Publish Unit Test Results
-      # You may pin to the exact commit or the version.
-      # uses: EnricoMi/publish-unit-test-result-action@823e195704e47d447e7e8cc801f02ab5d7ba2541
-      uses: EnricoMi/publish-unit-test-result-action@v1.23
-      with:
-        # GitHub API Access Token
-        github_token: ${{ secrets.GITHUB_TOKEN }} # optional, default is ${{ github.token }}
-        # Requests to the GitHub API are retried this number of times. The value must be a positive integer or zero.
-       
