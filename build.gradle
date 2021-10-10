@@ -44,7 +44,7 @@ dependencies {
 cucumber {
     glue = "classpath:Steps"
     tags = "@PETSTORE"
-    plugin = ['pretty']
+    plugin = ['pretty', "html:reports/MyLovelyReport.html"]
     featurePath = "src/test/resources/features"
     main = 'io.cucumber.core.cli.Main'
 }
