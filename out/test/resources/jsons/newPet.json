@@ -1,0 +1,18 @@
+{
+  "id": 1,
+  "category": {
+    "id": 2,
+    "name": "MyNewPets"
+  },
+  "name": "Fido",
+  "photoUrls": [
+    "anyUrl"
+  ],
+  "tags": [
+    {
+      "id": 3,
+      "name": "whySoComplexTag"
+    }
+  ],
+  "status": "available"
+}
