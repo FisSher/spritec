@@ -26,3 +26,10 @@ jobs:
       run: chmod +x gradlew
     - name: Test the solution with Gradle
       run: ./gradlew cucumber
+    - name: Upload a Build Artifact
+      uses: actions/upload-artifact@v2.2.4
+      with:
+          name: MyReport
+          path: reports
+
+
