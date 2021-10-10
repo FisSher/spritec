@@ -27,3 +27,5 @@ a paid tool and prefer to do a classic open source approach.
 #Next steps from here:
 You didn't ask to do json schema validations, but I love them!
 I would like to do some other endpoints, but they are more of the same.
+
+Maybe create a better args mapper.

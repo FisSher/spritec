@@ -26,3 +26,6 @@ jobs:
       run: chmod +x gradlew
     - name: Test the solution with Gradle
       run: ./gradlew cucumber
+    - name: Cucumber Report to Annotations
+      uses: deblockt/cucumber-report-annotations-action@v1.7
+
