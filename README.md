@@ -24,8 +24,12 @@ the api just responds 200 to almost everything, that is why I wanted to validate
 There is a lovely report on the "reports" folder. No link to calliope, it is just
 a paid tool and prefer to do a classic open source approach.
 
+I made github actions publish the classic one.
+
 #Next steps from here:
 You didn't ask to do json schema validations, but I love them!
 I would like to do some other endpoints, but they are more of the same.
 
 Maybe create a better args mapper.
+
+I would love to implement a prettier report like extent, allure, etc.
