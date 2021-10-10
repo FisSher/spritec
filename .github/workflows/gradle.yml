@@ -33,3 +33,4 @@ jobs:
       with:
         # github token
         access-token: ${{ secrets.GITHUB_TOKEN }}
+        path: reports/cucumber-report.json
