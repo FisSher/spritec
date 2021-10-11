@@ -19,6 +19,11 @@ I wanted to try some things (luckily they did work) like the body from file, tha
 you may find variations in the tests. There is no bearer token or things like that,
 the api just responds 200 to almost everything, that is why I wanted to validate a schema.
 
+About the UI tests, it has been a while since I used selenium, I don't know if devqa forms are intentionally
+broken, but I found issues trying to do simple cases. There is a pretty full form opportunity but it works really bad.
+
+There are 3 simple UI tests, correct, incorrect and special characters. But only E2E positive cases must be done here.
+
 #Reports
 
 There is a lovely report on the "reports" folder. No link to calliope, it is just

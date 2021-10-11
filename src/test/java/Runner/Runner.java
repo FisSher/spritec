@@ -1,5 +1,6 @@
 package Runner;
 
+import org.junit.jupiter.api.AfterEach;
 import org.junit.runner.RunWith;
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
@@ -10,9 +11,8 @@ import io.cucumber.junit.CucumberOptions;
         glue = "Steps",
         tags = "@PETSTORE",
         plugin = {"pretty" ,"html:reports/MyLovelyReport.html"}
-
-
 )
 public class Runner {
 
 }
+

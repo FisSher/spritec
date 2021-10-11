@@ -1,4 +1,4 @@
-@PETSTORE
+@PETSTORE @FULL @API
 Feature: Pet store API
 
   Background:
@@ -25,7 +25,7 @@ Feature: Pet store API
     Then a 200 status code is received
 
 
-  @POST @API
+  @POST
   Scenario: Post a new pet
     Given requestParams are needed to be sent to an endpoint
     And the body is loaded from src/test/resources/jsons/newPet.json
