@@ -15,7 +15,7 @@ public class UIStepDefs {
 
     @Given("the browser is at the main page")
     public void theBrowserIsAtTheMainPage() {
-        System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriverlinux");
         driver = new ChromeDriver();
         driver.get("https://demoqa.com/");
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
