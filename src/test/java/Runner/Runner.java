@@ -10,9 +10,9 @@ import io.cucumber.junit.CucumberOptions;
         features = "src/test/resources/features",
         glue = "Steps",
         tags = "@PETSTORE",
-        plugin = {"pretty" ,"html:reports/MyLovelyReport.html"}
+        plugin = {"pretty", "json:reports/MyLovelyReport.json"},
+        monochrome = true
 )
 public class Runner {
-
 }
 
