@@ -31,5 +31,10 @@ jobs:
       with:
           name: MyReport
           path: reports
-
-
+       # Finally we upload the results to Calliope.
+    - name: Upload results to Calliope
+      run: curl -X POST
+           -H "x-api-key:${{ secrets.API_KEY }}"
+           -H "multipart/form-data"
+           -F "file[]=@reports/MyLovelyReport.json"
+           "https://app.calliope.pro/api/v2/profile/${{ secrets.PROFILE_ID }}/import/cucumber?tag[]=myos&tag[]=myplatform&tag[]=mybuild"
