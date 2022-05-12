@@ -1,12 +1,13 @@
 # Guide:
+
 1. Using command line? Use gradlew cucumber, it will run the tests. Play with tags in build.gradle.
 
 
 2. From intellij you can execute the Runner class
 
-Troubleshot here: change intellij settings to build and run (and test too) using intellij instead of gradle.
+###### Troubleshot here: change intellij settings to build and run (and test too) using intellij instead of gradle.
 
-#Approach and why:
+# Approach and why:
 
 I chose this scenarios because they are the most common in any API.
 
@@ -24,7 +25,7 @@ broken, but I found issues trying to do simple cases. There is a pretty full for
 
 There are 3 simple UI tests, correct, incorrect and special characters. But only E2E positive cases must be done here.
 
-#Reports
+# Reports
 
 There is a lovely report on the "reports" folder. No link to calliope, it is just
 a paid tool and prefer to do a classic open source approach.
